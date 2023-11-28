@@ -1,0 +1,929 @@
+/* 
+    Common CSS styles for all the files starts here
+
+*/
+
+body {
+  background-color: #f8f7f3;
+  font-family: Georgia, cursive;
+}
+
+/* 
+    Common CSS styles for all the files ends
+
+*/
+
+/* 
+    CSS styles for Main Page starts here 
+*/
+
+.headingTab {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 150px auto;
+  grid-gap: 5px;
+  background-color: #72794d;
+  align-items: center;
+  align-content: center;
+}
+
+.dropbtn {
+  color: black;
+  background-color: #72794d;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+  line-height: 6px;
+  font-size: 47px;
+  letter-spacing: -0.034em;
+  font-stretch: 57%;
+  font-variation-settings: "opsz" 30.5;
+  font-weight: 5;
+}
+
+.dropbtn>img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 6px 10px;
+}
+
+/* 
+.dropIcon {  /* can make the icon change to white 
+  filter: invert(100);
+}
+*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 220px;
+  margin-top: 36px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-right: 55px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown>* {
+  vertical-align: middle;
+}
+
+/*background colour over drop down menu*/
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* show drop down menu when hovered over*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*change colour of drop down button when menu is displayed*/
+.dropdown:hover .dropbtn {
+  background-color: #c9d7e2;
+  color: black;
+  border-color: #f9f9f9;
+}
+
+.logo {
+  align-self: center;
+  padding-left: 50px;
+  padding-top: 5%;
+}
+
+.logoIcon {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+
+  text-align: left;
+}
+
+.title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-content: center;
+  text-align: center;
+}
+
+.headingTab>h1 {
+  font-size: 200%;
+  width: 100%;
+  font-weight: 900;
+  color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  grid-gap: 5px;
+  /* vh: viewport height */
+  min-height: 100vh;
+  /* vw: viewport width */
+  width: 100vw;
+}
+
+.left-column {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px;
+  height: auto;
+  border-right: solid;
+  color: #b0b9bf;
+}
+
+.QuestionTime {
+  clear: both;
+  padding-bottom: 76px;
+  float: right;
+  text-align-last: end;
+}
+
+.right-column {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 70%;
+  padding: 10px;
+}
+
+.Question {
+  display: block;
+}
+
+.users {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.qLink h2>a:link,
+.qLink h2>a:visited,
+.users>a:link,
+.users>a:visited,
+.username>a:link,
+.username>a:visited,
+.questionManageContents h3>a:link,
+.questionManageContents h3>a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.users>a:hover,
+.qLink h2>a:hover,
+.questionManageContents h3>a:hover,
+.username>a:hover {
+  color: #72794d !important;
+  text-decoration: underline;
+  cursor: grab;
+}
+
+.users>img,
+.users>a {
+  justify-content: flex-start;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.userScreenName {
+  width: 400px;
+  font-size: larger;
+}
+
+.users>answerIcon {
+  justify-content: flex-end;
+}
+
+.answerIcon {
+  display: flex;
+  border: solid;
+  border-radius: 100px;
+  text-align: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  float: right;
+  border-color: #c9d7e2;
+  background-color: #e0e7ee;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  margin-left: 120px;
+  align-content: center;
+  justify-content: center;
+}
+
+.Question img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+
+
+/* 
+    CSS styles for Main Page ends here
+*/
+
+/* 
+    CSS styles for qCreation and qManage starts here 
+*/
+
+header {
+  display: grid;
+  grid-template-columns: .5fr 1.5fr .5fr;
+  min-height: 5vh;
+  width: 100%;
+  background-color: #72794d;
+}
+
+#pageContainer {
+  display: grid;
+  grid-template-columns: .5fr 1.5fr .5fr;
+  grid-template-rows: 120px 200px 100px;
+  min-height: 80vh;
+  width: 100vw;
+}
+
+#widePageContainer {
+  display: grid;
+  grid-template-columns: 1.25fr 1.5fr .25fr;
+  grid-template-rows: 120px 200px 100px;
+  min-height: 80vh;
+  width: 100vw;
+}
+
+#LogoContainer {
+  display: flex;
+  justify-content: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 2px;
+  padding-left: 5px;
+}
+
+#Logo {
+  margin-left: 5px;
+  justify-self: left;
+  align-self: center;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+
+#PageTitle {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  font-family: Georgia, cursive;
+  font-size: 200%;
+  width: 100%;
+  font-weight: 900;
+  color: black;
+}
+
+#dropdown {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#dropdown:hover {
+  cursor: pointer;
+}
+
+.profilePic {
+  justify-self: right;
+  align-self: center;
+  height: auto;
+  width: 50px;
+}
+
+#dropdownArrow {
+  color: black;
+  align-self: center;
+  font-size: 25px;
+}
+
+.answererIcon {
+  align-self: center;
+  height: 70px;
+  width: 70px;
+  margin: 0 0 0 30px;
+  font-size: 50px;
+  border-radius: 50%;
+}
+
+.askerIcon {
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#bodyDiv {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#bodyDiv h3 {
+  margin-top: -15px;
+  font-size: 27px;
+}
+
+.interactionBox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  background-color: #72794d;
+  margin-top: 20px;
+  min-height: 40vh;
+  border-radius: 10px;
+}
+
+.sortButton {
+  text-align: right;
+  margin-top: -35px;
+  margin-bottom: -15px;
+}
+
+.username {
+  font-size: .75em;
+}
+
+.username a h4 {
+  font-size: x-large;
+  margin-left: 10px;
+  margin-right: -10px;
+  font-weight: normal;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+
+.answerContainer {
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  margin-top: -10px;
+}
+
+.totalVotes {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+  margin-left: 5px;
+  border-color: #c9d7e2;
+  background-color: #e0e7ee;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+}
+
+.answerContents {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 5px;
+  margin-top: 0.3em;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c9d7e2;
+  min-width: 500px;
+  min-height: 100px;
+  width: auto;
+  height: auto;
+}
+
+.votingButtons {
+  margin-left: 22em;
+  display: grid;
+  float: right;
+  margin-top: 3px;
+  grid-template-columns: 90px 110px;
+  grid-template-rows: 30px;
+}
+
+.upvote {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-style: solid;
+  border-color: #c9d7e2;
+  background-color: #e0e7ee;
+  border-width: 1px;
+  padding: 2px;
+}
+
+.upvote:hover {
+  cursor: pointer;
+}
+
+
+.downvote {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-style: solid;
+  border-color: #c9d7e2;
+  background-color: #e0e7ee;
+  border-width: 1px;
+  padding: 2px;
+}
+
+.downvote:hover {
+  cursor: pointer;
+}
+
+
+.detailAnswer {
+  border-bottom-style: solid;
+  border-bottom-color: #c9d7e2;
+  padding-bottom: 10px;
+  border-width: 2px;
+}
+
+.moreAnswers {
+  text-decoration: underline;
+}
+
+.moreAnswers>a:link,
+.moreAnswers>a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.moreAnswers>a:hover {
+  color: #72794d;
+  cursor: pointer;
+}
+
+.newQorA {
+  width: 60em;
+  height: 15em;
+  padding: .5em;
+  border-radius: 10px;
+  margin: auto 10px;
+}
+
+#QAForm {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+#QAForm label {
+  color: #f8f7f3;
+  font-size: 20px;
+}
+
+
+#submitButton {
+  cursor: pointer;
+
+  padding: 10px 10px;
+
+  display: inline-block;
+
+  font-size: medium;
+}
+
+#submit:hover {
+  cursor: pointer;
+  font-weight: 595;
+}
+
+.bigSubmit {
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#userIdDiv {
+  grid-column-start: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 5px;
+}
+
+#bodyDivWide {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#questionsTable {
+  margin-bottom: 15px;
+}
+
+.questionsTableRow {
+  display: grid;
+  grid-template-columns: .5fr 4fr;
+}
+
+.date {
+  text-align: right;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: #b0b9bf;
+  color: #b0b9bf;
+}
+
+.questionManageContents {
+  padding-left: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.questionManageContents>h3 {
+  font-size: larger;
+}
+
+#charStyle {
+  color: #f8f7f3;
+}
+
+/* 
+    CSS styles for qCreation and qManage ends here 
+*/
+
+
+/* 
+    CSS styles for Log-in and Sign-up starts here 
+*/
+
+#loginMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+#signupMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  padding-bottom: 20px;
+}
+
+#signupForm {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid #72794d;
+  border-radius: 39px;
+  padding-bottom: 30px;
+  height: auto;
+  width: 600px;
+  align-self: center;
+  margin: 30px 25px auto 25px;
+}
+
+
+.banner {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: Georgia, cursive;
+  /*font-style: bold;*/
+  font-size: xx-large;
+
+  color: rgb(0, 0, 0);
+  padding: .5em;
+  border-radius: .5em;
+}
+
+input {
+  /* this is from maria*/
+  display: grid;
+
+  margin: 10px 0px;
+  border: 1px solid #dedede;
+
+  border-radius: 10px;
+  padding: 10px 20px 10px 10px;
+  width: 80%;
+}
+
+label {
+  text-align: center;
+}
+
+#loginMain label {
+  padding-right: 10px;
+}
+
+.centered-header {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: Georgia, cursive;
+  font-size: xx-large;
+  text-align: left;
+}
+
+#login_or {
+  margin-bottom: 0;
+}
+
+h3,
+h6 {
+  font-family: Georgia, cursive;
+  font-size: medium;
+  border-radius: 1.5em;
+  padding: 1.5em;
+}
+
+.QuestionTime>h3 {
+  /* correct main page date/time color
+  this has to stay here b/c of conflict resolution*/
+  color: #b0b9bf;
+}
+
+h4 {
+  font-family: Georgia, cursive;
+  font-size: x-large;
+
+  border-radius: .5em;
+  padding: .5em;
+
+  margin-right: 80px;
+  margin-left: 30px;
+}
+
+td.questionsTableRow:nth-child(1)>div:nth-child(2)>div:nth-child(3)>h4:nth-child(2) {
+  margin-left: 10px;
+}
+
+.questionsTableRow h4 {
+  font-weight: 500;
+}
+
+.input-field {
+  padding: 5px;
+  margin-left: 50px;
+}
+
+h5 {
+  font-family: Georgia, cursive;
+  font-size: large;
+
+  color: rgb(87, 91, 96);
+}
+
+p {
+  font-size: medium;
+
+  color: rgb(87, 91, 96);
+}
+
+div.a {
+  background-color: #72794d;
+
+
+  padding: 0px 40px 40px 40px;
+  border: 0px solid;
+  margin: 10px 10px 10px 10px;
+}
+
+div.c {
+  text-align: right;
+}
+
+.container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-top: 20px;
+}
+
+.container>div {
+  text-align: center;
+  background-color: #72794d;
+}
+
+p.input-field:nth-child(1) {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.require {
+  font-style: italic;
+  font-size: small;
+  color: #848a94;
+}
+
+.item_1 {
+  /*login page*/
+  display: flex;
+
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+
+  padding: 10px 15px;
+}
+
+.chooseAvatar {
+  /* signup page */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 5px 10px 0 10px;
+}
+
+.chooseAvatar span {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item_2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.item_3 {
+  margin-left: 740px;
+  width: 70%;
+  padding: 10px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/*button description*/
+.button {
+  font-family: Georgia, cursive;
+
+  border: 1px solid #dedede;
+  background-color: #e0e7ee;
+  padding: 10px 0px;
+
+  display: inline-block;
+
+  font-size: medium;
+  margin: 3px 2px;
+  cursor: pointer;
+  border-radius: .5em;
+}
+
+/* for button on sign up page*/
+.form>.button {
+  width: 100%
+}
+
+#loginBut {
+  width: 371px;
+}
+
+
+.button1 {
+  font-size: x-large;
+  font-family: Georgia;
+}
+
+.avatar {
+  width: 100px;
+}
+
+.questionManageContents h3 {
+  font-size: larger;
+}
+
+.votes {
+  font-size: 18px;
+}
+
+.askerUsername {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.loginElements {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.center {
+  margin: 0 0 0 100px;
+}
+
+/* 
+    CSS styles for Log-in and Sign-up ends here 
+*/
+
+/*
+    CSS styles for JS start here
+*/
+.invalidEntry {
+  border: 2px solid #ff1f1f;
+}
+
+/* styles appearance of error messages  */
+.error-text {
+  color: #ff2929;
+}
+
+/* hides error messages  */
+.hidden {
+  visibility: hidden;
+}
+.padding {
+  padding-top: 25px;
+}
+
+#charTracker {
+  margin: -10px;
+  padding: 0px;
+  justify-self: left;
+}
+
+#ans-err {
+  padding-left: 10px;
+}
+
+#remainingChars {
+  padding-left: 10px;
+}
+
+#charTracker {
+  padding-right: 10px;
+}
+
+.image {
+  border-radius: 50%;
+}
